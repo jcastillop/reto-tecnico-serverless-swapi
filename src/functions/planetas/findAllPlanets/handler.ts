@@ -1,8 +1,7 @@
 
 import { Context } from 'aws-lambda';
 import swApi from '../../../../api/swApi';
-import { IPlaneta, IResponsePlanets, PropsResponseServiceFindAll } from 'src/interfaces';
-import { IResponsePlanet } from '../../../interfaces/responseSWAPI';
+import { IPlaneta, IResponsePlanets, PropsResponseServiceFindAll, IResponsePlanet } from 'src/interfaces';
 import { Planeta } from 'src/models';
 
 
