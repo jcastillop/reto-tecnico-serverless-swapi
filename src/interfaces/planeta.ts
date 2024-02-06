@@ -17,6 +17,13 @@ export interface IPlaneta{
     url:                string;
 }
 
+export interface PropsResponseServiceFindAllExternal{
+    identificador_aws:  string;
+    cantidad:           number;
+    pagina_siguiente:   string;
+    pagina_previa:      string;
+    resultado:          IPlaneta[];
+}
 export interface PropsResponseServiceFindAll{
     identificador_aws:  string;
     cantidad:           number;
@@ -25,7 +32,7 @@ export interface PropsResponseServiceFindAll{
     resultado:          IPlaneta[];
 }
 
-export interface PropsResponseServiceFindOwn{
+export interface PropsResponseServiceFind{
     identificador_aws:  string;
     resultado:          IPlaneta;
 }
