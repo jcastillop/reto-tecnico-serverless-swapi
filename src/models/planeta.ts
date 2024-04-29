@@ -1,4 +1,4 @@
-import { IPlaneta, IResponsePlanet } from "src/interfaces";
+import { IPlaneta, IResponsePlanet } from "src/interfaces"; 
 
 export class Planeta implements IPlaneta{
     id:                 string;
