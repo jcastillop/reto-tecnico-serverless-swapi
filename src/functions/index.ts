@@ -1,1 +1,1 @@
-export * from './planetas';
+export * from './planetas'; 
