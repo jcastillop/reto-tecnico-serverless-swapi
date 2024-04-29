@@ -6,18 +6,16 @@ import { IResponsePlanets, IPlaneta, IResponsePlanet, PropsResponseServiceFindAl
 
 export const listarPlanetasSwapi = async (awsRequestId: string, url: string): Promise<PropsResponseServiceFindAllExternal | null> => {
     try {
-        // Conectando a SWAPI y retornando la data
-        // TODO: Validar respuestas erroneas del servicio
-        // TODO: Crear un logger para registrar los eventos fuera de ACloudWatch
+        // Conectando a SWAPI y retornando la data 
+        // TODO: Validar respuestas erroneas del servicio 
+        // TODO: Crear un logger para registrar los eventos fuera de ACloudWatch 
         const { data } = await swApi.get<IResponsePlanets>(`${process.env.SWAPI}${url}`)
-        // Inicializando el array donde almacenaremos la inforamcion de los planetas 
         var arr_planetas:IPlaneta[] = [];
-        // Iterando en el resultado de los planetas y adpatandolos al modelo propio
         data.results.forEach((item:IResponsePlanet) => {
             const planeta = Planeta.fromResponsePlanet(item)
             arr_planetas.push(planeta)
         });
-        // Tipando la respuesta a realizar
+
         return {
             identificador_aws: awsRequestId,
             cantidad: data.count,

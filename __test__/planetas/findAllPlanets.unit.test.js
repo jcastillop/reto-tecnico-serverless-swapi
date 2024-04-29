@@ -1,8 +1,6 @@
 const { default: expect } = require("expect");
 const { findAllPlanets } = require("../../src/functions/planetas/index");
 
-const { isValidJson } = require("../../src/validations/index");
-
 const {
   listarPlanetasSwapi,
   encontrarPlaneta,

@@ -26,7 +26,7 @@ const serverlessConfiguration: AWS = {
     environment: {
       AWS_NODEJS_CONNECTION_REUSE_ENABLED: '1',
       NODE_OPTIONS: '--enable-source-maps --stack-trace-limit=1000',
-      SWAPI: 'https://swapi.py4e.com/api',
+      SWAPI: 'https://swapi.py4e.com/api', 
     },
   },
   // import the function via paths
