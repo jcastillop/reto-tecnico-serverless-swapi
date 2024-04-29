@@ -4,4 +4,4 @@ export interface IContenido{
     planetas:   string;
     especies:   string;
     vehiculos:  string;
-}
+} 
